@@ -48,28 +48,11 @@
             <p style="font-size: 0.8em; margin-top: 0.2em;">{{ post.authors }} </p>
             {% endif %}
 
-            <p>
-              {% if post.paperurl %}
-              <a href="{{ post.paperurl }}" target="_blank"><i class="fas fa-fw fa-file-pdf"
-                  aria-hidden="true"></i>Paper</a>
-              {% endif %}
-              {% if post.linkedin %}
-              &nbsp;&nbsp;&nbsp;<a href="{{ post.linkedin }}" target="_blank"><i class="fab fa-fw fa-linkedin"
-                  aria-hidden="true"></i>LinkedIn</a>
-              {% endif %}
-              {% if post.youtube %}
-              &nbsp;&nbsp;&nbsp;<a href="{{ post.youtube }}" target="_blank"><i class="fab fa-fw fa-youtube"
-                  aria-hidden="true"></i>YouTube</a>
-              {% endif %}
-              {% if post.githuburl %}
-              &nbsp;&nbsp;&nbsp;<a href="{{ post.githuburl }}" target="_blank"><i class="fab fa-fw fa-github"
-                  aria-hidden="true"></i>GitHub</a>
-              {% endif %}
-            </p>
           </div>
         </div>
       </div>
       <div class="archive__item-indented-content">
+
         {% if post.excerpt and site.read_more != 'enabled' %}
         <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
         {% elsif post.excerpt and site.read_more == 'enabled' %}
@@ -98,7 +81,24 @@
         {% elsif post.slidesurl %}
         <p><a href="{{ post.slidesurl }}" target="_blank">Download Slides</a></p>
         {% endif %}
-
+        <p style="text-align: center;">
+          {% if post.paperurl %}
+          <a href="{{ post.paperurl }}" target="_blank"><i class="fas fa-fw fa-file-pdf"
+              aria-hidden="true"></i>Paper</a>
+          {% endif %}
+          {% if post.linkedin %}
+          &nbsp;&nbsp;&nbsp;<a href="{{ post.linkedin }}" target="_blank"><i class="fab fa-fw fa-linkedin"
+              aria-hidden="true"></i>LinkedIn</a>
+          {% endif %}
+          {% if post.youtube %}
+          &nbsp;&nbsp;&nbsp;<a href="{{ post.youtube }}" target="_blank"><i class="fab fa-fw fa-youtube"
+              aria-hidden="true"></i>YouTube</a>
+          {% endif %}
+          {% if post.githuburl %}
+          &nbsp;&nbsp;&nbsp;<a href="{{ post.githuburl }}" target="_blank"><i class="fab fa-fw fa-github"
+              aria-hidden="true"></i>GitHub</a>
+          {% endif %}
+        </p>
       </div>
     </article>
   </div>

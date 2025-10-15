@@ -10,4 +10,5 @@ paperurl: '/files/2025-05-01-spike-encoding.pdf'
 bibtexurl: '/files/2025-05-01-spike-encoding.bib'
 awards: 'ICONS 2025 <strong>(Best Paper Award)</strong>'
 authors: '<strong>A Vasilache</strong>, J Scholz, V Schilling, S Nitzsche, F Kaelber, J Korsch, J Becker'
+githuburl: 'https://github.com/Alex-Vasilache/Spike-Encoding'
 ---
