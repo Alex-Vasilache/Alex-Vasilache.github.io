@@ -124,4 +124,12 @@ $(document).ready(function () {
     preventDefault: false,
   });
 
+  $('.card').on('click', function (e) {
+    if (e.target.tagName.toLowerCase() !== 'a' && !$(e.target).closest('a').length) {
+      var permalink = $(this).find('a[rel="permalink"]').attr('href');
+      if (permalink) {
+        window.location.href = permalink;
+      }
+    }
+  });
 });
