@@ -27,10 +27,10 @@ author:
   name             : "Alexandru Vasilache"
   pronouns         : # example: "she/her"  
   bio              : "Ph.D. researcher on efficient ML with a passion for AGI, developing low-power AI for hardware-aware applications."
-  location         : "Karlsruhe, Germany"
-  employer         : "FZI, Karlsruhe"
+  location         :
+  employer         :
   uri              : # URL
-  email            : "alex.vasilache9@gmail.com" 
+  email            : 
 
   # Academic websites
   academia         : # URL

@@ -7,7 +7,7 @@ redirect_from:
 ---
 
 <section id="publications" class="archive">
-<h1 class="archive__subtitle">Publications</h1>
+<h1 class="archive__title">Highlighted Work</h1>
 {% if site.author.googlescholar and site.author.orcid %}
 <div class="wordwrap">You can find a full list on <a href="{{site.author.googlescholar}}">Google Scholar
     </a> or <a href="{{site.author.orcid}}">ORCID</a>.</div>
