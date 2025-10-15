@@ -9,10 +9,6 @@
 
 main:
   - title: "Portfolio"
-    url: /portfolio/
-
+    url: /#portfolio
   - title: "Publications"
-    url: /publications/
-
-  - title: "About"
-    url: /about/
+    url: /#publications
