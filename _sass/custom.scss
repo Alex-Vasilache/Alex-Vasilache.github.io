@@ -1,0 +1,34 @@
+.archive__item p a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.archive__item p a i {
+    margin-right: 0.5em;
+}
+
+.archive__item__inner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.archive__item-teaser {
+    flex: 0 0 150px;
+    margin-right: 1em;
+}
+
+.archive__item-teaser img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.archive__item-content p:last-child {
+    margin-bottom: 0;
+}
+
+.archive__item-indented-content .archive__item-excerpt {
+    margin-top: 0;
+}

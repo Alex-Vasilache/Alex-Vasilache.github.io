@@ -22,12 +22,12 @@ redirect_from:
 {% if post.category != category[0] %}
 {% continue %}
 {% endif %}
-{% include publication-single.html %}
+{% include archive-single.html %}
 {% endfor %}
 {% endfor %}
 {% else %}
 {% for post in site.publications reversed %}
-{% include publication-single.html %}
+{% include archive-single.html %}
 {% endfor %}
 {% endif %}
 </section>
