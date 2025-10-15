@@ -45,7 +45,7 @@ redirect_from:
 
 <section id="bio" class="archive">
 <h1 class="archive__title">Short Biography</h1>
-<div class="wordwrap">Research Scientist at the <a href="https://www.fzi.de/en/" target="_blank" style="text-decoration: underline;">FZI Research Center for Information Technology</a> in Germany for the past 3 years. Received BS and MS at the <a href="https://www.kit.edu/english/index.php" target="_blank" style="text-decoration: underline;">KIT Karlsruhe Institute of Technology</a> in Computer Science, specializing in AI and Robotics. Currently wrapping up PhD in AI and Neuromorphic Computing at the <a href="https://www.kit.edu/english/index.php" target="_blank" style="text-decoration: underline;">KIT</a> under the supervision of Juergen Becker and co-supervision of Yulia Sandamirskaya.</div>
+<div class="wordwrap">Research Scientist at the <a href="https://www.fzi.de/en/" target="_blank" style="text-decoration: underline;">FZI Research Center for Information Technology</a> in Germany for the past 3 years. After High-School in Romania, received BS and MS at the <a href="https://www.kit.edu/english/index.php" target="_blank" style="text-decoration: underline;">KIT Karlsruhe Institute of Technology, Germany</a> in Computer Science, specializing in AI and Robotics. Currently wrapping up PhD in AI and Neuromorphic Computing at the <a href="https://www.kit.edu/english/index.php" target="_blank" style="text-decoration: underline;">KIT</a> under the supervision of Juergen Becker and co-supervision of Yulia Sandamirskaya.</div>
 </section>
 
 <section id="other-interests" class="archive">
