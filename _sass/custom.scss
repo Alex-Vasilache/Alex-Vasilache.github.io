@@ -9,22 +9,42 @@
 
 .archive__item__inner {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 0;
 }
 
 .archive__item-teaser {
-    flex: 0 0 150px;
+    flex: 0 0 12em;
     margin-right: 1em;
 }
 
 .archive__item-teaser img {
-    width: 100%;
-    height: 150px;
+    width: 12em;
+    height: 12em;
     object-fit: cover;
     border-radius: 5px;
+    padding: 0.25em;
 }
 
 .archive__item-indented-content .archive__item-excerpt {
     margin-top: -1em;
+}
+
+.card {
+    background: var(--background-color, #ffffff);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5em;
+    margin-top: 0.5em;
+    padding: 1em;
+    padding-bottom: 0.1em;
+    transition: box-shadow 0.05s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.archive__item:hover .archive__item-teaser {
+    box-shadow: none !important;
 }
