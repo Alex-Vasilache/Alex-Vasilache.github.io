@@ -1,7 +1,7 @@
 ---
 title: "Spiking Neural Networks for Low-Power Vibration-Based Predictive Maintenance"
 collection: publications
-category: 'Conference paper'
+category: conferences
 permalink: /publication/2025-07-01-vibration-maintenance
 excerpt: 'This paper is about spiking neural networks for low-power vibration-based predictive maintenance.'
 date: 2025-07-01

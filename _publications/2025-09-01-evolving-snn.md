@@ -1,7 +1,7 @@
 ---
 title: "Evolving Spatially Embedded Recurrent Spiking Neural Networks for Control Tasks"
 collection: publications
-category: 'Conference paper'
+category: conferences
 permalink: /publication/2025-09-01-evolving-snn
 excerpt: 'This paper is about evolving spatially embedded recurrent spiking neural networks for control tasks.'
 date: 2025-09-01

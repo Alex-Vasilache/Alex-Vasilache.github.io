@@ -1,7 +1,7 @@
 ---
 title: "Efficacy of Spiking Neural Networks for Intrusion Detection Systems"
 collection: publications
-category: conferences
+category: archive
 permalink: /publication/2025-09-02-intrusion-detection
 excerpt: 'This paper is about the efficacy of spiking neural networks for intrusion detection systems.'
 date: 2025-09-02

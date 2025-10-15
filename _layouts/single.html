@@ -59,6 +59,21 @@ layout: default
       <section class="page__content" itemprop="text">
         {{ content }}
 
+        <p>
+          {% if page.linkedin %}
+          <a href="{{ page.linkedin }}" target="_blank"><i class="fab fa-fw fa-linkedin"
+              aria-hidden="true"></i>LinkedIn</a>
+          {% endif %}
+          {% if page.youtube %}
+          &nbsp;&nbsp;&nbsp;<a href="{{ page.youtube }}" target="_blank"><i class="fab fa-fw fa-youtube"
+              aria-hidden="true"></i>YouTube</a>
+          {% endif %}
+          {% if page.githuburl %}
+          &nbsp;&nbsp;&nbsp;<a href="{{ page.githuburl }}" target="_blank"><i class="fab fa-fw fa-github"
+              aria-hidden="true"></i>GitHub</a>
+          {% endif %}
+        </p>
+
         {% if page.citation or page.paperurl or page.slidesurl %}
         <p style="font-size: smaller">
           {% if page.citation %}

@@ -37,12 +37,11 @@
     {% if post.collection == 'teaching' %}
     <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
     {% elsif post.collection == 'publications' %}
-    <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-    {% elsif post.date %}
-    <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{
-        site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time
-        datetime="{{ post.date | default: " 1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" |
-        date: "%B %d, %Y" }}</time></p>
+    <p>Published in <i>{{ post.venue }}</i> </p>
+    {% endif %}
+
+    {% if post.awards %}
+    <p style="font-size: 1em;">{{ post.awards }} </p>
     {% endif %}
 
     {% if post.excerpt and site.read_more != 'enabled' %}
@@ -94,6 +93,20 @@
     {% elsif post.bibtexurl %}
     <p><a href="{{ post.bibtexurl }}" target="_blank">Download Bibtex</a></p>
     {% endif %}
+
+    <p>
+      {% if post.linkedin %}
+      <a href="{{ post.linkedin }}" target="_blank"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i>LinkedIn</a>
+      {% endif %}
+      {% if post.youtube %}
+      &nbsp;&nbsp;&nbsp;<a href="{{ post.youtube }}" target="_blank"><i class="fab fa-fw fa-youtube"
+          aria-hidden="true"></i>YouTube</a>
+      {% endif %}
+      {% if post.githuburl %}
+      &nbsp;&nbsp;&nbsp;<a href="{{ post.githuburl }}" target="_blank"><i class="fab fa-fw fa-github"
+          aria-hidden="true"></i>GitHub</a>
+      {% endif %}
+    </p>
 
   </article>
 </div>
