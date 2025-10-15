@@ -8,4 +8,6 @@ date: 2025-07-02
 venue: 'LIVING MACHINES 2025'
 paperurl: '/files/2025-07-02-optimizing-neurons.pdf'
 bibtexurl: '/files/2025-07-02-optimizing-neurons.bib'
+awards: 'LIVING MACHINES 2025'
+authors: 'L Erb, T Boccato, <strong>A Vasilache</strong>, J Becker, N Toschi'
 ---

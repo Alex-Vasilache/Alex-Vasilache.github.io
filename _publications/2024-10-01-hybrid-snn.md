@@ -8,4 +8,6 @@ date: 2024-10-01
 venue: '2024 IEEE Biomedical Circuits and Systems Conference (BioCAS)'
 paperurl: '/files/2024-10-01-hybrid-snn.pdf'
 bibtexurl: '/files/2024-10-01-hybrid-snn.bib'
+awards: 'BioCAS 2024 <strong>(Winner of 2nd Place in the Grand Challenge)</strong>'
+authors: '<strong>A Vasilache*</strong>, J Krausse*, K Knoblock, J Becker'
 ---

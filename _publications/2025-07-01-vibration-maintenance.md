@@ -8,4 +8,6 @@ date: 2025-07-01
 venue: 'International Conference on Neuromorphic Systems (ICONS) 2025'
 paperurl: '/files/2025-07-01-vibration-maintenance.pdf'
 bibtexurl: '/files/2025-07-01-vibration-maintenance.bib'
+awards: 'ICONS 2025'
+authors: '<strong>A Vasilache</strong>, S Nitzsche, C Kneidl, M Tekneyan, M Neher, J Becker'
 ---
