@@ -10,3 +10,9 @@
 main:
   - title: "Papers"
     url: /#publications
+  - title: "Awards"
+    url: /#awards
+  - title: "Bio"
+    url: /#bio
+  - title: "Other Interests"
+    url: /#other-interests

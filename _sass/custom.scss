@@ -7,6 +7,19 @@
     margin-right: 0.5em;
 }
 
+.publication-links a {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.publication-links a:hover {
+    text-decoration: underline !important;
+}
+
+.publication-links a i {
+    margin-right: 0.5em;
+}
+
 .archive__item__inner {
     display: flex;
     align-items: stretch;

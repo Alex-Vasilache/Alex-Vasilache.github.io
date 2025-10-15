@@ -45,23 +45,32 @@ layout: default
 
         {% if page.collection == 'teaching' %}
         <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif page.venue and page.date %}
-        <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif page.awards %}
+        <p>{{ page.awards }}</p>
+        {% if page.authors %}
+        <p style="font-size: 0.8em;">{{ page.authors }}</p>
+        {% endif %}
         {% elsif page.date %}
         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{
             site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time
             datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y"
             }}</time></p>
         {% endif %}
+
+
       </header>
       {% endunless %}
 
       <section class="page__content" itemprop="text">
         {{ content }}
 
-        <p>
+        <p class="publication-links">
+          {% if page.paperurl %}
+          <a href="{{ page.paperurl }}" target="_blank"><i class="fas fa-fw fa-file-pdf"
+              aria-hidden="true"></i>Paper</a>
+          {% endif %}
           {% if page.linkedin %}
-          <a href="{{ page.linkedin }}" target="_blank"><i class="fab fa-fw fa-linkedin"
+          &nbsp;&nbsp;&nbsp;<a href="{{ page.linkedin }}" target="_blank"><i class="fab fa-fw fa-linkedin"
               aria-hidden="true"></i>LinkedIn</a>
           {% endif %}
           {% if page.youtube %}
@@ -74,20 +83,9 @@ layout: default
           {% endif %}
         </p>
 
-        {% if page.citation or page.paperurl or page.slidesurl %}
+        {% if page.citation %}
         <p style="font-size: smaller">
-          {% if page.citation %}
-          Recommended citation: {{ page.citation }}<br />
-          {% endif %}
-          {% assign has_link = false %}
-          {% if page.paperurl %}
-          <a href="{{ page.paperurl }}" target="_blank">Download Paper</a>
-          {% assign has_link = true %}
-          {% endif %}
-          {% if page.slidesurl %}
-          {% if has_link %} | {% endif %}
-          <a href="{{ page.slidesurl }}" target="_blank">Download Slides</a>
-          {% endif %}
+          Recommended citation: {{ page.citation }}
         </p>
         {% endif %}
 
