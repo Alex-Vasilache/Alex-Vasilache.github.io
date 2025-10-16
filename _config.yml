@@ -23,7 +23,7 @@ repository               : "Alex-Vasilache/Alex-Vasilache.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile_pic.png"
+  avatar           : "/images/profile_pic.png"
   name             : "Alexandru Vasilache"
   pronouns         : # example: "she/her"  
   bio              : "Artificial Intelligence Researcher developing energy-efficient Machine Learning and Reinforcement Learning algorithms for any application: control, neural decoding, healthcare, industry and beyond."
