@@ -8,7 +8,8 @@ date: 2025-09-01
 venue: 'International Conference on Artificial Neural Networks ICANN 2025'
 paperurl: '/files/2025-09-01-evolving-snn.pdf'
 bibtexurl: '/files/2025-09-01-evolving-snn.bib'
-teaser: '/images/Blank_Square.png'
+header:
+ teaser: '/files/2025-09-01-evolving-snn/teaser.png'
 awards: 'ICANN 2025 <strong>(Best Student Paper Award)</strong>'
 authors: '<strong>A Vasilache</strong>, J Scholz, Y Sandamirskaya, J Becker'
 linkedin: 'https://www.linkedin.com/posts/alexandru-vasilache-99b7b8213_icann2025-beststudentpaper-bestpaperaward-activity-7374414286808444928-FLyw?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADYLuocB_1uEIUwQkpQgukX8aAn-v1Os43E'
@@ -36,3 +37,63 @@ The following table compares our spatially embedded models to the best performin
 | HalfCheetah | 384,256      | 703             | 0.18    | 17641.8 ± 61.9   | 3670.4 ± 1198.3     | 20.81  |
 | Walker2d    | 359,680      | 694             | 0.19    | 6956.6 ± 15.9    | 2492.0 ± 247.7      | 35.82  |
 | Ant         | 475,392      | 1,208           | 0.25    | 5846.3 ± 138.5   | 1346.8 ± 35.1       | 23.04  |
+
+Comparing the performance of spatial embeddings, we observed that the 2D spatial embedding generally achieved the best performance especially in less complex environments, which may represent evidence for the similar 2D sheet-like structures observed in the brain, as cortical sheets.
+
+## Demonstrations
+
+<table>
+  <tr>
+    <td align="center"><b>Ant</b></td>
+    <td align="center"><b>Cartpole</b></td>
+  </tr>
+  <tr>
+    <td><img src="/files/2025-09-01-evolving-snn/vid/ant.gif" alt="Ant"></td>
+    <td><img src="/files/2025-09-01-evolving-snn/vid/cartpole.gif" alt="Cartpole"></td>
+  </tr>
+  <tr>
+    <td align="center"><b>HalfCheetah</b></td>
+    <td align="center"><b>Hopper</b></td>
+  </tr>
+  <tr>
+    <td><img src="/files/2025-09-01-evolving-snn/vid/halfcheetah.gif" alt="HalfCheetah"></td>
+    <td><img src="/files/2025-09-01-evolving-snn/vid/hopper.gif" alt="Hopper"></td>
+  </tr>
+</table>
+
+A version of the code in this repository was adapted to evolve a neuromorphic controller for a physical inverted pendulum. The following video demonstrates the resulting SNN controller successfully performing the swing-up and balancing task in a real-world setting:
+
+<p align="center">
+  <img src="/files/2025-09-01-evolving-snn/vid/real_cartpole.gif" alt="Real-World Cartpole Demonstration">
+</p>
+
+Full video available on [YouTube](https://www.youtube.com/watch?v=Y0yKGLlRkW4).
+
+The process involved training a network in a finely hand-tuned simulation of the physical environment. Furthermore, to solve the task, a handcrafted solution of two networks was requried: one for swing-up and one for balancing, with the switching point arbitrarily chosen.
+
+The difficulty in adapting the evolutionary aproach for a real-world scenario, prompted me to start looking into sample-efficient algorithms that can be deployed to train on real-world hardware in a short amount of time, which lead me to Model-based Reinforcement Learning. 
+
+## Methods
+
+Our framework evolves Spiking Neural Networks (SNNs) for continuous control tasks using a genetic algorithm. The core idea is to embed the neurons in a 3D space, where the connection probabilities and strengths are influenced by the distance between them. This encourages the evolution of efficient, spatially organized networks.
+
+<p align="center">
+  <img src="/files/2025-09-01-evolving-snn/img/evolution_concept_v3.png" alt="Evolution Concept">
+</p>
+
+The SNNs are composed of Leaky Integrate-and-Fire (LIF) neurons and are trained to control agents in various Gymnasium environments. The network's connectivity is determined by the Euclidean distance between neurons, promoting local connections.
+
+<p align="center">
+  <img src="/files/2025-09-01-evolving-snn/img/combined_networks.png" alt="Network Architectures">
+</p>
+
+The evolutionary process starts with a population of randomly initialized networks. In each generation, the networks are evaluated, and the best-performing individuals are selected to produce offspring through crossover and mutation. This process iteratively refines the SNNs, leading to specialized and efficient controllers.
+
+## Future Work
+
+A key limitation of the current study is the computational cost of the framework. Simulating larger networks, which preliminary experiments suggest would improve performance, is currently infeasible due to the implementation’s inefficiency. For this reason we are working on a JAX implementation of the current PyTorch version to allow for faster experimentation and testing of the approach.
+
+## Awards
+<p align="center">
+  <img src="/files/2025-09-01-evolving-snn/img/best_paper_award_ICANN.jpg" alt="Best Paper Award">
+</p>
