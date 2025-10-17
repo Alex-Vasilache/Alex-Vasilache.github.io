@@ -3,7 +3,9 @@ title: "Training Neural Networks by Optimizing Neuron Positions"
 collection: publications
 category: conferences
 permalink: /publication/2025-07-02-optimizing-neurons
-excerpt: 'This paper is about training neural networks by optimizing neuron positions.'
+excerpt: '<ul><li>Spatial Embedding to reduce trainable parameters from O(N^2) to O(N)
+</li>
+<li>Neuron positions are optimized via backprop</li></ul>'
 date: 2025-07-02
 venue: 'LIVING MACHINES 2025'
 paperurl: '/files/2025-07-02-optimizing-neurons.pdf'
@@ -23,7 +25,7 @@ layers from collapsing. By using distance-dependent wiring rules, we reduce the
 training parameter complexity from $$\mathcal{O}(n^2)$$ to $$\mathcal{O}(n)$$.
 
 <p align="center">
-  <img src="/files/2025-07-02-optimizing-neurons/images/3d-ann-structure.png" width="600" alt="3D ANN Structure">
+  <img src="/files/2025-07-02-optimizing-neurons/images/3d-ann-structure.png" alt="3D ANN Structure">
 </p>
 *Illustration of a three-layer feedforward network embedded in three-dimensional Euclidean space. Neurons optimize their positions within their respective two-dimensional layers while maintaining fixed z-coordinates corresponding to their layer indices.*
 
