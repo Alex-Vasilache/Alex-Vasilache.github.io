@@ -19,6 +19,7 @@ githuburl: 'https://github.com/Alex-Vasilache/Spatial-SNNs'
 excerpt: '<ul><li>Spatial Embedding to optimize RNN topology for control tasks.</li>
 <li>SOTA performance on simple tasks using 1.46% of the weights</li>
 <li>66% SOTA performance on complex tasks using 0.06% of the weights (200 vs. 350.000)</li>
+<li>Up to 5000x less estimated energy</li>
 </ul>
 '
 
