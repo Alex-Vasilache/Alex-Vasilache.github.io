@@ -68,7 +68,10 @@ As a qualitative observation from the visual representations, it is evident that
 Finally, we can convert the velocity predictions of our models back to positions and visualize the predicted movement of the cursor across time, while also displaying the incoming neuron activity. The blue star displays the original trajectory, the yellow shows the GRU movement, green stands for sGRU, and red visualizes the LIF model.
 
 <p align="center">
-  <img src="/files/2024-10-01-hybrid-snn/video/vis_compressed.gif" alt="Visualization of predicted movement">
+<video width="640" height="480" controls>
+  <source src="{{ '/files/2024-10-01-hybrid-snn/video/vis.mp4' | relative_url }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 </p>
 
 As smaller velocity errors accumulate, the overall difference in position builds up over time. Despite this, the general direction and magnitude are being predicted fairly well, even by our lowest performing model, the LIF. This suggests there is potential for real-world deployment of such models.
