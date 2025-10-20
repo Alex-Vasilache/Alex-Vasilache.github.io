@@ -18,4 +18,6 @@ header:
 
 # Spike Encoding
 
-To 
+To reduce the amount of computation in Neural Networks on Neuromorphic Hardware, it is necessary to increase the percentage of the signal that is made up of zeros. This is because on such event-based platforms the processing time, amount of compute and power consumption are all proportional to the number of dense element multiplications. Thus, it is desirable to find signal representations that preserve information while increasing sparsity. This can be achieved through appropriate Spike Encoding.
+
+This repository presents 4 common spike encoding algorithms (SF, BSA, PWM, LIF), as well as 2 specialized ones, a Population Coding Encoder and a Gymnasium Encoder.
