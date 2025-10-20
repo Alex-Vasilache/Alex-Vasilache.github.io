@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/2025-07-01-vibration-maintenance
 excerpt: '<ul>
-<li>The benefits of Hardware-Software co-design on energy consumption</li>
+<li>The benefits of Hardware-Software co-design on Neural Network energy consumption.</li>
 <li>Up to 4000x less estimated energy</li></ul>'
 date: 2025-07-01
 venue: 'International Conference on Neuromorphic Systems (ICONS) 2025'
