@@ -67,3 +67,7 @@ Since the conversion process is inherently lossy, it is necessary to optimize th
 </p>
 *The GymnasiumEncoder extends rate encoding methods with utility functions tailored for reinforcement learning environments, enabling direct integration with Gymnasium workflows.*
 
+# Awards
+<p align="center">
+  <img src="/files/2025-05-01-spike-encoding/images/bpa.png" alt="Best Paper Award">
+</p>

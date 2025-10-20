@@ -12,3 +12,8 @@ awards: 'IECBES 2024 <strong>(Best Paper Award)</strong>'
 authors: 'G Biri*, <strong>A Vasilache*</strong>, T Hu, M Themistocli, S Nitzsche, J Juhl, C Erler, S Fuhrhop, W Stork, J Becker'
 linkedin: 'https://www.linkedin.com/posts/alexandru-vasilache-99b7b8213_bestpaperaward-ai-healthcare-activity-7283054262173978626-w5ep?utm_source=share&utm_medium=member_desktop&rcm=ACoAADYLuocB_1uEIUwQkpQgukX8aAn-v1Os43E'
 ---
+
+# Awards
+<p align="center">
+  <img src="/files/2024-12-01-sleep-apnea/images/bpa.png" alt="Best Paper Award">
+</p>

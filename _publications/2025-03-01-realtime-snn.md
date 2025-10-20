@@ -10,4 +10,6 @@ paperurl: '/files/2025-03-01-realtime-snn.pdf'
 bibtexurl: '/files/2025-03-01-realtime-snn.bib'
 awards: 'NICE 2025'
 authors: 'J Krausse*, <strong>A Vasilache*</strong>, K Knoblock, J Becker'
+header:
+    teaser: '/files/2025-03-01-realtime-snn/teaser.png'
 ---
