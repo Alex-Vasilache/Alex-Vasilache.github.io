@@ -3,7 +3,7 @@ title: "Training Neural Networks by Optimizing Neuron Positions"
 collection: publications
 category: conferences
 permalink: /publication/2025-07-02-optimizing-neurons
-excerpt: '<ul><li>Spatial Embedding to reduce trainable parameters from O(N^2) to O(N)
+excerpt: '<ul><li>Spatial Embedding to reduce trainable parameters from O(N<sup>2</sup>) to O(N)
 </li>
 <li>Neuron positions are optimized via backprop</li></ul>'
 date: 2025-07-02

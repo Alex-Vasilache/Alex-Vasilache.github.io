@@ -24,8 +24,17 @@ Wireless intracortical Brain Machine Interfaces have the potential to combat the
 Despite this, wireless IBMIs still suffer due to limited data rates, and as a result, careful consideration has to be put into model design.
 For this reason, in the context of the Grand Challenge for Neural Decoding, we targeted hybrid spiking neural networks for embedded neural decoding in wireless iBMIs.
 
+<p align="center">
+  <img src="/files/2024-10-01-hybrid-snn/teaser.png" alt="Neural Decoding Task">
+</p>
+
+
 # Approach
-The dataset consits of recordings of motor cortex and somatosensory cortex recordings in primates, alongisde cursor movements on a screen. 
+The dataset consists of recordings of motor cortex and somatosensory cortex recordings in primates, alongside cursor movements on a screen. The dataset is available at [https://zenodo.org/records/583331](https://zenodo.org/records/583331).
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bPkpdpm03z8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
 
 When analyzing the videos we observed that the movements can be described as having a “target-locking” behaviour, which means that every time a new target appears on the screen, it prompts a rapid goal directed movement towards it.
 
@@ -37,13 +46,13 @@ We thus hypothesized that in order to predict velocities of this type, maybe wha
 
 
 Of course, by discretizing the signal, some information is necessarily lost during the process.
-So in order to chose exactly how coarse we segment, we took the original signal and discretized it to various degrees. We then quantifyied the amount of information loss during the interpolation using the R^2 score (which has values ranging from –inf to +1, with values closer to 1 being of better quality).
+So in order to chose exactly how coarse we segment, we took the original signal and discretized it to various degrees. We then quantifyied the amount of information loss during the interpolation using the R<sup>2</sup> score (which has values ranging from –inf to +1, with values closer to 1 being of better quality).
 
 <p align="center">
   <img src="/files/2024-10-01-hybrid-snn/images/interp_val.jpg" alt="Validation of Interpolation Approach">
 </p>
 
-With a 4-step discretization, the reconstruction is almost perfect within 2 decimals. Looking at 8 and 16 step discretization, we see that one can achieve up to a 16x data reduction at a cost of 0.045 R^2. This suggests that the prediction of a few keypoints along the velocity trajectory can be sufficient for accurately predicting cursor movements, while reducing the number of predicted outputs by a factor of 4, 8 or even 16, which is perfectly suited to the limited data rates available on wireless iBMIs.
+With a 4-step discretization, the reconstruction is almost perfect within 2 decimals. Looking at 8 and 16 step discretization, we see that one can achieve up to a 16x data reduction at a cost of 0.045 R<sup>2</sup>. This suggests that the prediction of a few keypoints along the velocity trajectory can be sufficient for accurately predicting cursor movements, while reducing the number of predicted outputs by a factor of 4, 8 or even 16, which is perfectly suited to the limited data rates available on wireless iBMIs.
 
 # Network Architecture
 

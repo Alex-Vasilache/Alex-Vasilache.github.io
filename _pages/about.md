@@ -36,7 +36,7 @@ redirect_from:
 <h1 class="archive__title">Awards and Achievements</h1>
 <div class="wordwrap">
 <ul>
-<li>Finished PhD in 3 years at the age of 26 (fastest ever in the group).</li>
+<li>Soon to finish PhD in 3 years at the age of 26.</li>
 <li>In 1 year of publications: 7 first-author, 3 best paper awards and 2nd place winner in the Grand Challenge on Neural Decoding at BioCAS 2024.</li>
 <li>Best New Neuromorph (BNN) Nominee at the Telluride Neuromorphic Workshop.</li>
 </ul>
