@@ -85,6 +85,8 @@ Finally, we can convert the velocity predictions of our models back to positions
 
 As smaller velocity errors accumulate, the overall difference in position builds up over time. Despite this, the general direction and magnitude are being predicted fairly well, even by our lowest performing model, the LIF. This suggests there is potential for real-world deployment of such models.
 
+# Follow-up Paper
+You can access the follow-up paper on this topic [here](/publication/2025-03-01-realtime-snn).
 
 # Awards
 <p align="center">
