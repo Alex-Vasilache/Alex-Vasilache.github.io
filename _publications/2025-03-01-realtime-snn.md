@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/2025-03-01-realtime-snn
 excerpt: '<ul>
-<li>Realtime implementation of the neural decoding model from previous publication.</li>
+<li>Realtime implementation of the neural decoding model from the <a href="/publication/2024-10-01-hybrid-snn">previous publication</a>.</li>
 <li>SOTA Performance on the Primate Reaching Dataset</li></ul>'
 date: 2025-03-01
 venue: 'Neuro Inspired Computational Elements Conference NICE 2025'
