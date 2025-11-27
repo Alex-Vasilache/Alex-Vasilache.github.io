@@ -36,7 +36,7 @@ redirect_from:
 <h1 class="archive__title">Awards and Achievements</h1>
 <div class="wordwrap">
 <ul>
-<li>Soon to finish PhD in 3 years at the age of 26.</li>
+<li>Finished PhD in 3 years at the age of 26.</li>
 <li>In 1 year of publications: 7 first-author, 3 best paper awards and 2nd place winner in the Grand Challenge on Neural Decoding at BioCAS 2024.</li>
 <li>Best New Neuromorph (BNN) Nominee at the Telluride Neuromorphic Workshop.</li>
 </ul>
@@ -45,7 +45,7 @@ redirect_from:
 
 <section id="bio" class="archive">
 <h1 class="archive__title">Short Biography</h1>
-<div class="wordwrap">Research Scientist at the <a href="https://www.fzi.de/en/" target="_blank" style="text-decoration: underline;">FZI Research Center for Information Technology</a> in Germany for the past 3 years. After High-School in Romania, received BS and MS at the <a href="https://www.kit.edu/english/index.php" target="_blank" style="text-decoration: underline;">KIT Karlsruhe Institute of Technology, Germany</a> in Computer Science, specializing in AI and Robotics. Currently wrapping up PhD in AI and Neuromorphic Computing at the <a href="https://www.kit.edu/english/index.php" target="_blank" style="text-decoration: underline;">KIT</a> under the supervision of Juergen Becker and co-supervision of Yulia Sandamirskaya.</div>
+<div class="wordwrap">Research Scientist at the <a href="https://www.fzi.de/en/" target="_blank" style="text-decoration: underline;">FZI Research Center for Information Technology</a> in Germany for the past 3 years. After High-School in Romania, received BS and MS at the <a href="https://www.kit.edu/english/index.php" target="_blank" style="text-decoration: underline;">KIT Karlsruhe Institute of Technology, Germany</a> in Computer Science, specializing in AI and Robotics. Just finished PhD in AI and Neuromorphic Computing at the <a href="https://www.kit.edu/english/index.php" target="_blank" style="text-decoration: underline;">KIT</a> under the supervision of Juergen Becker and co-supervision of Yulia Sandamirskaya.</div>
 </section>
 
 <section id="other-interests" class="archive">
